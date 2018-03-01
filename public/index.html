@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <h1>Only PNG files can be uploaded!</h1>
+  <h3>Press F12 for more info.</h3>
+  <input type="file" id="file" webkitdirectory directory></input><br>
+  <button type="button" onclick="uploadFile()">Upload</button> 
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB1TbXbr9VIUCRBrcMlFlnsHSK8en-89Pw",
+      authDomain: "testproject-stage-drm.firebaseapp.com",
+      databaseURL: "https://testproject-stage-drm.firebaseio.com",
+      projectId: "testproject-stage-drm",
+      storageBucket: "testproject-stage-drm.appspot.com",
+      messagingSenderId: "263550692138"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>
